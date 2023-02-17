@@ -13,6 +13,7 @@ html {
     display: flex;
     justify-content: space-between;
     color: #2D1C50;
+    padding: 10px;
 }
 
 .logo {
@@ -29,15 +30,63 @@ html {
     text-align: center;
 }
 
+.socials-mobile {
+    display: none;
+}
+
+.socials {
+    display: flex;
+    gap: 6px;
+}
+
+.socials img, .socials-mobile img {
+    width: 36px;
+    height: 36px;
+    background-color: #855BB8;
+    padding: 6px;
+}
+
+.socials-btn:hover {
+    cursor: pointer;
+    background-color: #7546ad;
+}
+
 .banner {
     background-color: #CDA4FF;
-    height: 350px;
+    height: 300px;
+    position: relative;
 }
 
 p {
     font-family: 'Lexend', sans-serif;
     font-weight: 300;
     /*font-weight: 500;*/
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.about-btn {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    width: 225px;
+    height: 40px;
+    background: linear-gradient(to right, #A465F0, #7C57A8);
+    border: 0;
+    position: absolute;
+}
+
+.about-btn:hover {
+    background: linear-gradient(to right, #a062eb, #6e4a9a);
+    cursor: pointer;
+}
+
+main {
+    height: 600px;
 }
 
 footer {
@@ -51,4 +100,31 @@ footer {
     width: 100%;
     bottom: 0;
     margin-top: 90px;
+}
+
+@media only screen and (max-width: 680px) {
+    .socials {
+        display: none;
+    }
+    .socials-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    #close-btn {
+        transform: scaleY(-1);
+    }
+    .dropdown {
+        display: none;
+    }
+    .header {
+        padding-top: 40px;
+    }
+    .logo {
+        height: 45px;
+        width: 45px;
+    }
+    .header-name {
+        font-size: 20px;
+    }
 }
