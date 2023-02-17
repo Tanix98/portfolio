@@ -24,6 +24,7 @@ document.addEventListener("click", function (e) {
     }
     openBtn.style.display = "none";
     dropdownMenu.style.backgroundColor = "#855BB8";
+    console.log("open");
   }
   if (e.target.getAttribute('id') == "close-btn") {
     for (let i = 0; i < dropdownItems.length; i++) {
@@ -31,5 +32,6 @@ document.addEventListener("click", function (e) {
     }
     openBtn.style.display = "block";
     dropdownMenu.style.backgroundColor = "";
+    console.log("open");
   }
 });
