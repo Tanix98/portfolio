@@ -20,7 +20,7 @@ p {
     justify-content: space-between;
     margin: auto;
     color: #2D1C50;
-    padding: 10px;
+    padding: 20px;
     padding-bottom: 5px;
     height: 200px;
     max-width: 750px;
@@ -131,7 +131,7 @@ footer {
     margin-top: 90px;
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 550px) {
     .socials {
         display: none;
     }
@@ -153,11 +153,6 @@ footer {
     .dropdown {
         display: none;
     }
-    .header {
-        padding-top: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
     .logo {
         height: 52px;
     }
@@ -171,7 +166,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 385px) {
+@media only screen and (max-width: 390px) {
     .header-name {
         white-space: normal;
         font-size: 15px;
