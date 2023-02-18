@@ -9,35 +9,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Lexend:wght@300;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/src/css/index.css">
-    <script defer src="/src/js/index.js"></script>
+    <link rel="stylesheet" href="src/css/index.css">
+    <script defer src="src/js/index.js"></script>
 </head>
 <body>
     <div class="banner">
         <div class="header">
-            <img class="logo" src="/components/icons/personal_logo.svg" alt="Personal logo, a stylized Ø letter"></img>
-            <div class="header-name">
-                <div>Øystein Røstvik</div>
-                <div>Front-end developer</div>
+            <div class="logo-full">
+                <img class="logo" src="/components/icons/personal_logo.svg" alt="Personal logo, a stylized Ø letter"></img>
+                <div class="header-name">
+                    <div>Øystein Røstvik</div>
+                    <div>Front-end developer</div>
+                </div>
             </div>
             <div class="socials">
-                <a href="https://github.com/Tanix98" target="_blank" rel="noopener noreferrer"><img src="/components/icons/socials/github-mark-small.svg" class="socials-btn" alt="GitHub icon"></img></a>
-                <a href="https://www.linkedin.com/in/oystein-rostvik/" target="_blank" rel="noopener noreferrer"><img src="/components/icons/socials/linkedin.png" class="socials-btn" alt="LinkedIn icon"></img></a>
-                <img src="/components/icons/socials/email-icon-big.svg" class="socials-btn email-btn" alt="Email icon"></img>
+                <a href="https://github.com/Tanix98" target="_blank" rel="noopener noreferrer" title="GitHub account"><img src="/components/icons/socials/github-mark-small.svg" class="socials-btn" alt="GitHub icon"></img></a>
+                <a href="https://www.linkedin.com/in/oystein-rostvik/" target="_blank" rel="noopener noreferrer" title="LinkedIn account"><img src="/components/icons/socials/linkedin.png" class="socials-btn" alt="LinkedIn icon"></img></a>
+                <img src="/components/icons/socials/email-icon-big.svg" class="socials-btn email-btn" alt="Email icon, click to copy email address" tabindex="0" title="Email address"></img>
             </div>
             <div class="socials-mobile">
-                <img src="/components/icons/arrow.svg" class="socials-btn" id="open-btn" alt="Dropdown menu arrow icon"></img>
-                <a href="https://github.com/Tanix98" target="_blank" rel="noopener noreferrer"><img src="/components/icons/socials/github-mark-small.svg" class="socials-btn dropdown" alt="GitHub icon"></img></a>
-                <a href="https://www.linkedin.com/in/oystein-rostvik/" target="_blank" rel="noopener noreferrer"><img src="/components/icons/socials/linkedin.png" class="socials-btn dropdown" alt="LinkedIn icon"></img></a>
-                <img src="/components/icons/socials/email-icon-big.svg" class="socials-btn dropdown email-btn" alt="Email icon"></img>
-                <img src="/components/icons/arrow.svg" class="socials-btn dropdown" id="close-btn" alt="Dropdown menu arrow icon"></img>
+                <img src="/components/icons/arrow.svg" class="socials-btn" id="open-btn" alt="Open dropdown menu" tabindex="0" title="Open"></img>
+                <a href="https://github.com/Tanix98" target="_blank" rel="noopener noreferrer" title="GitHub account"><img src="/components/icons/socials/github-mark-small.svg" class="socials-btn dropdown" alt="GitHub icon"></img></a>
+                <a href="https://www.linkedin.com/in/oystein-rostvik/" target="_blank" rel="noopener noreferrer" title="LinkedIn account"><img src="/components/icons/socials/linkedin.png" class="socials-btn dropdown" alt="LinkedIn icon"></img></a>
+                <img src="/components/icons/socials/email-icon-big.svg" class="socials-btn dropdown email-btn" alt="Email icon, click to copy email address" title="Email address" tabindex="0"></img>
+                <img src="/components/icons/arrow.svg" class="socials-btn dropdown" id="close-btn" alt="Close dropdown menu" tabindex="0" title="Close"></img>
             </div>
         </div>
+        <p class="hidden" id="email-copy-txt">Email copied!</p>
         <div class="btn-div"><button class="about-btn">About me</button></div>
     </div>
     <main>
-        <p>projects will be here</p>
+        
     </main>
-    <footer><p>© Øystein Røstvik, 2023</p></footer>
+    <footer><p id="copyright-text"></p></footer>
 </body>
 </html>

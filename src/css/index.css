@@ -9,36 +9,47 @@ html {
     min-height: 100%;
 }
 
+p {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    /*font-weight: 500;*/
+}
+
 .header {
     display: flex;
     justify-content: space-between;
+    margin: auto;
     color: #2D1C50;
     padding: 10px;
     padding-bottom: 5px;
     height: 200px;
+    max-width: 750px;
 }
 
-.logo {
-    height: 80px;
+.logo-full {
+    display: flex;
+    gap: 15px;
+    height: 65px;
 }
 
 .header-name {
+    white-space: nowrap;
     font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
     /*font-weight: 700;
     font-weight: 800;*/
-    font-size: 32px;
-    text-align: center;
-    height: 80px;
+    font-size: 25px;
 }
 
 .socials-mobile {
     display: none;
+    max-height: 150px;
 }
 
 .socials {
     display: flex;
     gap: 6px;
+    height: 36px;
 }
 
 .socials img, .socials-mobile img {
@@ -46,6 +57,7 @@ html {
     height: 36px;
     background-color: #855BB8;
     padding: 6px;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
 }
 
 .socials-btn:hover {
@@ -59,26 +71,41 @@ html {
     position: relative;
 }
 
-p {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 300;
-    /*font-weight: 500;*/
-}
-
 .btn-div {
     display: flex;
     justify-content: center;
 }
 
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1.5s, opacity 1.5s linear;
+}
+
+#email-copy-txt {
+    margin: auto;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #313131;
+    color: white;
+    width: 130px;
+    height: 35px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
 .about-btn {
     font-family: 'Lexend', sans-serif;
-    font-weight: 500;
     color: #fff;
     width: 225px;
     height: 40px;
     background: linear-gradient(to right, #A465F0, #7C57A8);
     border: 0;
     position: absolute;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.30);
 }
 
 .about-btn:hover {
@@ -87,7 +114,7 @@ p {
 }
 
 main {
-    height: 600px;
+    max-width: 750px;
 }
 
 footer {
@@ -103,7 +130,7 @@ footer {
     margin-top: 90px;
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 540px) {
     .socials {
         display: none;
     }
@@ -111,6 +138,13 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 2px;
+        margin-left: 10px;
+    }
+    .socials img, .socials-mobile img {
+        box-shadow: none;
+    }
+    #open-btn {
+        box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
     }
     #close-btn {
         transform: scaleY(-1);
@@ -130,10 +164,15 @@ footer {
         font-size: 20px;
         height: 52px;
     }
+    #email-copy-txt {
+        top: 26%;
+        left: 50%;
+    }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 410px) {
     .header-name {
+        white-space: normal;
         font-size: 15px;
     }
     .logo {
