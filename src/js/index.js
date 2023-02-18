@@ -7,14 +7,10 @@ const dropdownItems = document.getElementsByClassName("dropdown");
 
 /**
  * Copies the email address to the users clipboard when button is clicked
- * Also display a message to notify the user
+ * Also displays a message to notify the user
  */
 function emailCopy() {
     navigator.clipboard.writeText("oysteinrostvik@protonmail.com");
-    /*emailCopyTxt.style.display = "flex";
-    setTimeout(() => {
-      emailCopyTxt.style.display = "none";
-    }, "2500")*/
     emailCopyTxt.classList.toggle("hidden");
     emailCopyTxt.style.display = "flex";
     setTimeout(() => {
@@ -42,6 +38,10 @@ document.addEventListener("keyup", (e) => {
   }
 });
 
+/**
+ * Open and close dropdown menu
+ * Called when the open or close button is clicked 
+ * */
 function openDropdown() {
   for (let i = 0; i < dropdownItems.length; i++) {
     dropdownItems[i].style.display = "block";
@@ -60,10 +60,10 @@ function closeDropdown() {
 }
 
 openBtn.addEventListener("click", openDropdown);
-closeBtn.addEventListener("click", closeDropdown);
+for (let i = 0; i < dropdownItems.length; i++) {
+  dropdownItems[i].addEventListener("click", closeDropdown);
+}
 
 // Keep copyright year up to date
-const copyrightText = document.querySelector("#copyright-text");
 const currentDate = new Date();
-const currentYear = currentDate.getFullYear();
-copyrightText.innerHTML = `© Øystein Røstvik, ${currentYear}`;
+document.querySelector("#copyright-text").innerHTML = `© Øystein Røstvik, ${currentDate.getFullYear()}`;

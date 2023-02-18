@@ -95,6 +95,7 @@ p {
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .about-btn {
@@ -130,7 +131,7 @@ footer {
     margin-top: 90px;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 530px) {
     .socials {
         display: none;
     }
@@ -165,12 +166,12 @@ footer {
         height: 52px;
     }
     #email-copy-txt {
-        top: 26%;
+        top: 140px;
         left: 50%;
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 385px) {
     .header-name {
         white-space: normal;
         font-size: 15px;
