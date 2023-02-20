@@ -7,6 +7,21 @@
 html {
     position: relative;
     min-height: 100%;
+    overflow-x: hidden;
+}
+
+h1, h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    font-size: 15px;
 }
 
 p {
@@ -65,15 +80,14 @@ p {
     background-color: #7546ad;
 }
 
+.email-btn {
+    cursor: pointer;
+}
+
 .banner {
     background-color: #CDA4FF;
     height: 325px;
     position: relative;
-}
-
-.btn-div {
-    display: flex;
-    justify-content: center;
 }
 
 .hidden {
@@ -95,43 +109,150 @@ p {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 4;
 }
 
-.about-btn {
+.btn-div {
+    max-width: 225px;
+    min-width: 100px;
+    margin: auto;
+    padding: 10px;
+}
+
+#open-modal-btn {
     font-family: 'Lexend', sans-serif;
     color: #fff;
-    width: 225px;
+    width: 100%;
     height: 40px;
-    background: linear-gradient(to right, #A465F0, #7C57A8);
     border: 0;
-    position: absolute;
+    background: linear-gradient(to right, #A465F0, #7C57A8);
     box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.30);
 }
 
-.about-btn:hover {
+#open-modal-btn:hover {
     background: linear-gradient(to right, #a062eb, #6e4a9a);
     cursor: pointer;
 }
 
+#modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    background-color: #FBF8FF;
+    width: 349px;
+    padding: 14px;
+    top: 290px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 3;
+    font-size: 14px;
+}
+
+#close-modal-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    height: 16px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.modal-middle {
+    margin-bottom: 10px;
+}
+
+.txt-margin {
+    margin-bottom: 10px;
+}
+
+#portrait {
+    width: 73px;
+    height: 73px;
+}
+
+#modal-background {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    cursor: pointer;
+    z-index: 2;
+}
+
+#box-container {
+    display: flex;
+    gap: 2px;
+    font-size: 12px;
+    color: white;
+}
+
+#box-row-1, #box-row-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#box-1, #box-2, #box-3, #box-4 {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+#box-1 {
+    flex: 4;
+    background-color: #9C73CA;
+}
+#box-3 {
+    flex: 5;
+    background-color: #552D8A;
+}
+#box-2 {
+    background-color: #8661B3;
+}
+#box-4 {
+    background-color: #674392;
+}
+
 main {
+    background-color: #FBF8FF;
+}
+
+#projects {
     max-width: 750px;
+    height: 1200px;
 }
 
 footer {
-    height: 70px;
     color: white;
     background-color: #313131;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     width: 100%;
     bottom: 0;
     margin-top: 90px;
+    padding: 25px;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 560px) {
     .socials {
         display: none;
     }
@@ -166,15 +287,73 @@ footer {
     }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 500px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        overflow-wrap: anywhere;
+        text-align: center;
+    }
+    #email-btn p {
+        overflow-wrap: anywhere;
+    }
+}
+
+@media only screen and (max-width: 410px) {
     .header-name {
         white-space: normal;
         font-size: 15px;
     }
+
     .logo {
         height: 40px;
     }
+
     .header-name {
         height: 40px;
+    }
+
+    #modal-container {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #modal {
+        background-color: #FBF8FF;
+        width: 100%;
+        height: 100%;
+        padding: 18px;
+        top: 50%;
+        left: 50%;
+    }
+
+    #close-modal-btn {
+        background: #313131;
+        color: white;
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        right: 15px;
+    }
+}
+
+/*@media only screen and (max-width: 334px) {
+    .header-name {
+        display: none;
+    }
+}*/
+
+@media only screen and (max-width: 340px) {
+    #modal {
+        padding: 5px;
+    }
+    #box-1, #box-2, #box-3, #box-4 {
+        padding-left: 10px;
     }
 }
