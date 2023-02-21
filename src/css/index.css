@@ -30,6 +30,24 @@ p {
     /*font-weight: 500;*/
 }
 
+main {
+    background-color: #FBF8FF;
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+footer {
+    color: white;
+    background-color: #313131;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 25px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,8 +55,8 @@ p {
     color: #2D1C50;
     padding: 20px;
     padding-bottom: 5px;
-    height: 200px;
-    max-width: 750px;
+    height: 175px;
+    max-width: 840px;
 }
 
 .logo-full {
@@ -49,6 +67,7 @@ p {
 
 .header-name {
     white-space: nowrap;
+    /*overflow: hidden;*/
     font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
     /*font-weight: 700;
@@ -148,7 +167,7 @@ p {
     background-color: #FBF8FF;
     width: 349px;
     padding: 14px;
-    top: 280px;
+    top: 290px;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -230,26 +249,125 @@ p {
     background-color: #674392;
 }
 
-main {
-    background-color: #FBF8FF;
+#projects-container {
+    max-width: 840px;
+    margin: auto;
+    padding: 20px;
 }
 
-#projects {
-    max-width: 750px;
-    height: 1200px;
+hr.solid {
+    border-top: 1px solid #313131;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-footer {
-    color: white;
-    background-color: #313131;
+.project {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
+    gap: 10px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.preview {
+    flex: 5;
+}
+
+.info {
+    flex: 6;
+    font-size: 13px;
+}
+
+.desc {
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.demo-btn, .repo-btn {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
+}
+
+.demo-btn {
+    background: #9F50FD;
+    border: 2px solid #9F50FD;
+}
+.demo-btn:hover {
+    background: #914ce6;
+    border: 2px solid #914ce6;
+}
+
+.repo-btn {
+    background: none;
+    border: 2px solid #313131;
+    color: #313131;
+    transition: color 0.7s;
+    transition: background-color 0.7s;
+}
+
+.repo-btn:hover {
+    background: #313131;
+    color: white;
+}
+
+.tags {
+    display: flex;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tag {
+    background-color: #313131;
+    padding: 3px;
+    width: 80px;
+}
+
+.preview {
+    position: relative;
+}
+
+.preview-img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px 1.3px rgba(0,0,0,0.25);
+}
+
+.img-overlay {
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
     bottom: 0;
-    margin-top: 90px;
-    padding: 25px;
+    width: 100%;
+    min-height: 30px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.project-title {
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 560px) {
@@ -287,12 +405,25 @@ footer {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
+    .project {
+        flex-direction: column;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .demo-btn, .repo-btn {
+        width: 100%;
+    }
+    .tags {
+        justify-content: center;
+    }
     footer {
         flex-direction: column;
         justify-content: center;
         gap: 5px;
-        overflow-wrap: anywhere;
+        /*overflow-wrap: anywhere;*/
+        white-space: nowrap;
         text-align: center;
     }
     #email-btn p {
@@ -305,7 +436,6 @@ footer {
         white-space: normal;
         font-size: 15px;
     }
-
     .logo {
         height: 40px;
     }
@@ -313,7 +443,6 @@ footer {
     .header-name {
         height: 40px;
     }
-
     #modal-container {
         position: fixed;
         width: 100%;
@@ -323,7 +452,6 @@ footer {
         justify-content: center;
         align-items: center;
     }
-
     #close-modal-btn {
         background: #313131;
         color: white;
@@ -340,12 +468,6 @@ footer {
     }
 }
 
-/*@media only screen and (max-width: 334px) {
-    .header-name {
-        display: none;
-    }
-}*/
-
 @media only screen and (max-width: 340px) {
     h1 {
         padding-right: 5px;
@@ -355,5 +477,8 @@ footer {
     }
     #box-1, #box-2, #box-3, #box-4 {
         padding-left: 10px;
+    }
+    .project-title {
+        overflow: hidden;
     }
 }
