@@ -45,7 +45,8 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0;
-    padding: 25px;
+    padding: 20px;
+    font-size: 14px;
 }
 
 .header {
@@ -172,7 +173,7 @@ footer {
     transform: translate(-50%, -50%);
     position: absolute;
     z-index: 3;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 #close-modal-btn {
@@ -255,7 +256,7 @@ footer {
     padding: 20px;
 }
 
-hr.solid {
+hr {
     border-top: 1px solid #313131;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -270,6 +271,11 @@ hr.solid {
     flex-direction: row-reverse;
 }
 
+.reverse-btns-tags {
+    margin-left: normal;
+    /*margin-left: auto;*/
+}
+
 .preview {
     flex: 5;
 }
@@ -281,6 +287,11 @@ hr.solid {
 
 .desc {
     margin-bottom: 15px;
+}
+
+.btns-tags {
+    display: flex;
+    flex-direction: column;
 }
 
 .buttons {
@@ -304,6 +315,8 @@ hr.solid {
 .demo-btn {
     background: #9F50FD;
     border: 2px solid #9F50FD;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
 }
 .demo-btn:hover {
     background: #914ce6;
@@ -314,8 +327,8 @@ hr.solid {
     background: none;
     border: 2px solid #313131;
     color: #313131;
-    transition: color 0.7s;
-    transition: background-color 0.7s;
+    transition: color 0.5s;
+    transition: background-color 0.5s;
 }
 
 .repo-btn:hover {
@@ -335,7 +348,8 @@ hr.solid {
 .tag {
     background-color: #313131;
     padding: 3px;
-    width: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .preview {
@@ -409,11 +423,8 @@ hr.solid {
     .project {
         flex-direction: column;
     }
-    .buttons {
-        flex-direction: column;
-    }
     .demo-btn, .repo-btn {
-        width: 100%;
+        width: 100%
     }
     .tags {
         justify-content: center;
@@ -480,5 +491,11 @@ hr.solid {
     }
     .project-title {
         overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .buttons {
+        flex-direction: column;
     }
 }

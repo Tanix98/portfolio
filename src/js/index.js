@@ -18,6 +18,18 @@ for (i = 0; i < emailBtn.length; i++) {
   emailBtn[i].addEventListener("click", emailCopy);
 }
 
+// Create divider over every post after the first one
+/*const projectDiv = document.querySelector("#projects-container");
+for (let i = 1; i < projects.length; i++) {
+  projectDiv.innerHTML += "<hr>";
+}*/
+
+// Reverse order of every other project
+const projects = document.getElementsByClassName("project");
+for (let i = 1; i < projects.length; i += 2) {
+  projects[i].classList.add("reverse");
+}
+
 // Keep copyright year up to date
 const currentDate = new Date();
 document.querySelector("#copyright-text").innerHTML = `© Øystein Røstvik, ${currentDate.getFullYear()}`;
