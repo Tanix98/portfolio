@@ -1,0 +1,156 @@
+#projects-container {
+    max-width: 840px;
+    margin: auto;
+    padding: 20px;
+}
+
+hr {
+    border-top: 1px solid var(--dark);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.project {
+    display: flex;
+    gap: 10px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse-btns-tags {
+    margin-left: normal;
+    /*margin-left: auto;*/
+}
+
+.preview {
+    flex: 5;
+}
+
+.info {
+    flex: 6;
+    font-size: 13px;
+}
+
+.desc {
+    margin-bottom: 15px;
+}
+
+.btns-tags {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.demo-btn, .repo-btn {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    padding: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
+}
+
+.demo-btn {
+    background: var(--demoBtn);
+    border: 2px solid var(--demoBtn);
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+.demo-btn:hover {
+    background: var(--demoBtnHover);
+    border: 2px solid var(--demoBtnHover);
+}
+
+.repo-btn {
+    background: none;
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    transition: color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.repo-btn:hover {
+    background: var(--dark);
+    color: var(--white);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--white);
+    font-size: 11px;
+    text-align: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tag {
+    background-color: var(--dark);
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.preview {
+    position: relative;
+}
+
+.preview-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px 1.3px rgba(0,0,0,0.25);
+}
+
+.img-overlay {
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.project-title {
+    color: var(--white);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 520px) {
+    .project {
+        flex-direction: column;
+    }
+    .demo-btn, .repo-btn {
+        width: 100%
+    }
+    .tags {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 310px) {
+    .buttons {
+        flex-direction: column;
+    }
+    .project-title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}

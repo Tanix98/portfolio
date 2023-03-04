@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Collection of projects meant to showcase skills, knowledge and experience relevant for front-end web development">
     <title>Portfolio - Øystein Røstvik</title>
     <link rel="icon" type="image/x-icon" href="components/icons/favico.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Lexend:wght@300;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="src/css/index.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/modal.css">
+    <link rel="stylesheet" href="src/css/projects.css">
     <script defer src="src/js/index.js"></script>
     <script defer src="src/js/dropdown_menu.js"></script>
     <script defer src="src/js/modal.js"></script>
@@ -84,7 +89,7 @@
             </div>
         </div>
         <p class="hidden" id="email-copy-txt">Email copied!</p>
-        <div class="btn-div"><button id="open-modal-btn">About me</button></div>
+        <div id="open-modal-btn-div"><button id="open-modal-btn">About me</button></div>
     </div>
     <main>
         <div id="projects-container">
@@ -103,10 +108,10 @@
                     </p>
                     <div class="btns-tags">
                         <div class="buttons">
-                            <button class="demo-btn">
+                            <button class="demo-btn" id="snake-demo-btn">
                                 Hosted demo
                             </button>
-                            <button class="repo-btn">
+                            <button class="repo-btn" id="snake-repo-btn">
                                 GitHub repo
                             </button>
                         </div>

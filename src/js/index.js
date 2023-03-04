@@ -30,6 +30,25 @@ for (let i = 1; i < projects.length; i += 2) {
   projects[i].classList.add("reverse");
 }
 
+const snakeDemoBtn = document.querySelector("#snake-demo-btn");
+snakeDemoBtn.addEventListener("click", () => {
+  window.open("https://tanix98.github.io/snake-game/", "_blank");
+});
+snakeDemoBtn.addEventListener("keyup", (e) => {
+  if (e.key === "Enter") {
+    window.open("https://tanix98.github.io/snake-game/", "_blank");
+  }
+});
+const snakeRepoBtn = document.querySelector("#snake-repo-btn");
+snakeRepoBtn.addEventListener("click", () => {
+  window.open("https://github.com/Tanix98/snake-game", "_blank");
+});
+snakeRepoBtn.addEventListener("keyup", (e) => {
+  if (e.key === "Enter") {
+    window.open("https://github.com/Tanix98/snake-game", "_blank");
+  }
+});
+
 // Keep copyright year up to date
 const currentDate = new Date();
 document.querySelector("#copyright-text").innerHTML = `© Øystein Røstvik, ${currentDate.getFullYear()}`;

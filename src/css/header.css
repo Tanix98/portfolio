@@ -1,0 +1,128 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    color: var(--blueishDark);
+    padding: 20px;
+    padding-bottom: 5px;
+    height: 175px;
+    max-width: 840px;
+}
+
+.logo-full {
+    display: flex;
+    gap: 15px;
+    height: 65px;
+}
+
+.header-name {
+    white-space: nowrap;
+    /*overflow: hidden;*/
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    /*font-weight: 700;
+    font-weight: 800;*/
+    font-size: 25px;
+    transition: all .1s linear;
+}
+
+.socials-mobile {
+    display: none;
+    max-height: 150px;
+}
+
+.socials {
+    display: flex;
+    gap: 6px;
+    height: 36px;
+}
+
+.socials img, .socials-mobile img {
+    width: 36px;
+    height: 36px;
+    background-color: var(--socialsBtn);
+    padding: 6px;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
+}
+
+.socials-btn:hover {
+    cursor: pointer;
+    background-color: var(--socialsBtnHover);
+}
+
+.email-btn {
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1.5s, opacity 1.5s linear;
+}
+
+#email-copy-txt {
+    margin: auto;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--dark);
+    color: var(--white);
+    width: 130px;
+    height: 35px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+@media only screen and (max-width: 560px) {
+    .socials {
+        display: none;
+    }
+    .socials-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-left: 10px;
+    }
+    .socials img, .socials-mobile img {
+        box-shadow: none;
+    }
+    #open-btn {
+        box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
+    }
+    #close-btn {
+        transform: scaleY(-1);
+    }
+    .dropdown {
+        display: none;
+    }
+    .logo {
+        height: 52px;
+    }
+    .header-name {
+        font-size: 20px;
+        height: 52px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    #email-copy-txt {
+        top: 140px;
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .header-name {
+        white-space: normal;
+        font-size: 15px;
+    }
+    .logo {
+        height: 40px;
+    }
+
+    .header-name {
+        height: 40px;
+    }
+}
