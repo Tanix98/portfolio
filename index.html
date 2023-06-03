@@ -1,192 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Collection of projects meant to showcase skills, knowledge and experience relevant for front-end web development">
-    <title>Portfolio - Øystein Røstvik</title>
-    <link rel="icon" type="image/x-icon" href="components/icons/favico.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Lexend:wght@300;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="src/css/index.css">
-    <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/footer.css">
-    <link rel="stylesheet" href="src/css/modal.css">
-    <link rel="stylesheet" href="src/css/projects.css">
-    <script defer src="src/js/index.js"></script>
-    <script defer src="src/js/dropdown_menu.js"></script>
-    <script defer src="src/js/modal.js"></script>
-</head>
-<body>
-    <div id="modal-container">
-        <div id="modal">
-            <button class="close-modal" id="close-modal-btn">&times;</button>
-            <div class="modal-top">
-                <h1>ØYSTEIN RØSTVIK</h1>
-                <img id="portrait" src="components/images/portrait.webp" alt="Portrait image of Øystein Røstvik">
-            </div>
-            <div class="modal-middle">
-                <p class="txt-margin">Hello, I’m a 24 year old student from Tromsø currently living in Kristiansand 😀</p>
-                <p class="txt-margin">I study Front-end Development at Noroff Higher Vocational College.</p>
-                <p>I have experience designing websites and building them using HTML, CSS, JavaScript and APIs.</p>
-            </div>
-            <div class="modal-bottom">
-                <div id="box-container">
-                    <div id="box-row-1">
-                        <div id="box-1">
-                            <h3>Planning</h3>
-                            <p>Kanban board</p>
-                            <p>Gantt chart</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Collection of projects meant to my showcase skills, knowledge and experience relevant for front-end web development"
+        />
+        <title>Portfolio - Øystein Røstvik</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="src/components/icons/favico.svg"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Lexend:wght@300;500&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="src/css/index.css" />
+        <link rel="stylesheet" href="src/css/header.css" />
+        <link rel="stylesheet" href="src/css/footer.css" />
+        <link rel="stylesheet" href="src/css/modal.css" />
+        <link rel="stylesheet" href="src/css/projects.css" />
+        <script defer src="src/js/index.js"></script>
+        <script defer src="src/js/dropdown_menu.js"></script>
+        <script defer src="src/js/modal.js"></script>
+        <script defer src="src/js/buttons.js"></script>
+    </head>
+    <body>
+        <div id="modal-container">
+            <div id="modal">
+                <button class="close-modal" id="close-modal-btn">
+                    &times;
+                </button>
+                <div class="modal-top">
+                    <h1>ØYSTEIN RØSTVIK</h1>
+                    <img
+                        id="portrait"
+                        src="src/components/images/portrait.webp"
+                        alt="Portrait image of Øystein Røstvik"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="modal-middle">
+                    <p class="txt-margin">
+                        Hello, I’m a 24 year old student from Tromsø currently
+                        living in Kristiansand 😀
+                    </p>
+                    <p class="txt-margin">
+                        I study Front-end Development at Noroff Higher
+                        Vocational College.
+                    </p>
+                    <p>
+                        I have experience designing websites and building them
+                        using HTML, CSS, JavaScript and APIs.
+                    </p>
+                </div>
+                <div class="modal-bottom">
+                    <div id="box-container">
+                        <div id="box-row-1">
+                            <div id="box-1">
+                                <h3>Planning</h3>
+                                <p>Kanban board</p>
+                                <p>Gantt chart</p>
+                            </div>
+                            <div id="box-3">
+                                <h3>Designing</h3>
+                                <p>Figma</p>
+                                <p>Adobe Xd</p>
+                                <p>Adobe Illustrator</p>
+                            </div>
                         </div>
-                        <div id="box-3">
-                            <h3>Designing</h3>
-                            <p>Figma</p>
-                            <p>Adobe Xd</p>
-                            <p>Adobe Illustrator</p>
-                        </div>
-                    </div>
-                    <div id="box-row-2">
-                        <div id="box-2">
-                            <h3>Coding</h3>
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>JavaScript</p>
-                            <p>Bootstrap</p>
-                            <p>React</p>
-                        </div>
-                        <div id="box-4">
-                            <h3>Headless CMS</h3>
-                            <p>WordPress</p>
+                        <div id="box-row-2">
+                            <div id="box-2">
+                                <h3>Coding</h3>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>JavaScript</p>
+                                <p>Bootstrap</p>
+                                <p>React</p>
+                            </div>
+                            <div id="box-4">
+                                <h3>Headless CMS</h3>
+                                <p>WordPress</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="close-modal" id="modal-background"></div>
+        </div>
+        <div class="banner">
+            <div class="header">
+                <div class="logo-full">
+                    <img
+                        class="logo"
+                        src="src/components/icons/personal_logo.svg"
+                        alt="Personal logo, a stylized Ø letter"
+                    />
+                    <div class="header-name">
+                        <div>Øystein Røstvik</div>
+                        <div id="name-undertitle">Front-end developer</div>
+                        <div id="name-undertitle-short">Front-end dev</div>
+                    </div>
+                </div>
+                <div class="socials-desktop">
+                    <a
+                        href="https://github.com/Tanix98"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="GitHub account"
+                        ><img
+                            src="src/components/icons/socials/github-mark-small.svg"
+                            class="socials-btn"
+                            alt="GitHub icon"
+                    /></a>
+                    <a
+                        href="https://www.linkedin.com/in/oystein-rostvik/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="LinkedIn account"
+                        ><img
+                            src="src/components/icons/socials/linkedin.png"
+                            class="socials-btn"
+                            alt="LinkedIn icon"
+                    /></a>
+                    <img
+                        src="src/components/icons/socials/email-icon-big.svg"
+                        class="socials-btn email-btn"
+                        alt="Email icon, click to copy email address"
+                        tabindex="0"
+                        title="Email address"
+                    />
+                </div>
+                <div class="socials-mobile">
+                    <img
+                        src="src/components/icons/arrow.svg"
+                        class="socials-btn"
+                        id="open-btn"
+                        alt="Open dropdown menu"
+                        tabindex="0"
+                        title="Open"
+                    />
+                    <a
+                        href="https://github.com/Tanix98"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="GitHub account"
+                        class="dropdown"
+                        ><img
+                            src="src/components/icons/socials/github-mark-small.svg"
+                            class="socials-btn"
+                            alt="GitHub icon"
+                    /></a>
+                    <a
+                        href="https://www.linkedin.com/in/oystein-rostvik/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="LinkedIn account"
+                        class="dropdown"
+                        ><img
+                            src="src/components/icons/socials/linkedin.png"
+                            class="socials-btn"
+                            alt="LinkedIn icon"
+                    /></a>
+                    <img
+                        src="src/components/icons/socials/email-icon-big.svg"
+                        class="socials-btn dropdown email-btn"
+                        alt="Email icon, click to copy email address"
+                        title="Email address"
+                        tabindex="0"
+                    />
+                    <img
+                        src="src/components/icons/arrow.svg"
+                        class="socials-btn dropdown"
+                        id="close-btn"
+                        alt="Close dropdown menu arrow icon"
+                        tabindex="0"
+                        title="Close"
+                    />
+                </div>
+            </div>
+            <p class="hidden" id="email-copy-txt">Email copied!</p>
+            <div id="open-modal-btn-div">
+                <button id="open-modal-btn">About me</button>
             </div>
         </div>
-        <div class="close-modal" id="modal-background"></div>
-    </div>
-    <div class="banner">
-        <div class="header">
-            <div class="logo-full">
-                <img class="logo" src="components/icons/personal_logo.svg" alt="Personal logo, a stylized Ø letter">
-                <div class="header-name">
-                    <div>Øystein Røstvik</div>
-                    <div>Front-end developer</div>
-                </div>
-            </div>
-            <div class="socials">
-                <a href="https://github.com/Tanix98" target="_blank" rel="noopener noreferrer" title="GitHub account"><img src="components/icons/socials/github-mark-small.svg" class="socials-btn" alt="GitHub icon"></a>
-                <a href="https://www.linkedin.com/in/oystein-rostvik/" target="_blank" rel="noopener noreferrer" title="LinkedIn account"><img src="components/icons/socials/linkedin.png" class="socials-btn" alt="LinkedIn icon"></a>
-                <img src="components/icons/socials/email-icon-big.svg" class="socials-btn email-btn" alt="Email icon, click to copy email address" tabindex="0" title="Email address">
-            </div>
-            <div class="socials-mobile">
-                <img src="components/icons/arrow.svg" class="socials-btn" id="open-btn" alt="Open dropdown menu" tabindex="0" title="Open">
-                <a href="https://github.com/Tanix98" target="_blank" rel="noopener noreferrer" title="GitHub account" class="dropdown"><img src="components/icons/socials/github-mark-small.svg" class="socials-btn" alt="GitHub icon"></a>
-                <a href="https://www.linkedin.com/in/oystein-rostvik/" target="_blank" rel="noopener noreferrer" title="LinkedIn account" class="dropdown"><img src="components/icons/socials/linkedin.png" class="socials-btn" alt="LinkedIn icon"></a>
-                <img src="components/icons/socials/email-icon-big.svg" class="socials-btn dropdown email-btn" alt="Email icon, click to copy email address" title="Email address" tabindex="0">
-                <img src="components/icons/arrow.svg" class="socials-btn dropdown" id="close-btn" alt="Close dropdown menu arrow icon" tabindex="0" title="Close">
-            </div>
-        </div>
-        <p class="hidden" id="email-copy-txt">Email copied!</p>
-        <div id="open-modal-btn-div"><button id="open-modal-btn">About me</button></div>
-    </div>
-    <main>
-        <div id="projects-container">
-            <div class="project">
-                <div class="preview">
-                    <img class="preview-img" src="components/images/previews/snake-game-preview.webp" alt="Preview image of the Snake Game project">
-                    <div class="img-overlay">
-                        <p class="project-title">Snake Game</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <p class="desc">
-                        A small project made in two days, with the goal of creating a very simple game similar to Snake. Primarily just a fun side project, but it did give me some experience with using the HTML canvas element together with JavaScript. 
-                        <br>
-                        There were more features I could have added, and bugs to fix, but I chose not to spend too much time on it since I don’t plan on becoming a game developer, and I would rather spend time on more front-end focused projects.
-                    </p>
-                    <div class="btns-tags">
-                        <div class="buttons">
-                            <button class="demo-btn" id="snake-demo-btn">
-                                Hosted demo
-                            </button>
-                            <button class="repo-btn" id="snake-repo-btn">
-                                GitHub repo
-                            </button>
+        <main>
+            <div id="projects-container">
+                <div class="project">
+                    <a
+                        href="https://holidaze-98.netlify.app/?page=1"
+                        target="_blank"
+                        class="preview"
+                    >
+                        <img
+                            class="preview-img"
+                            src="src/components/images/previews/holidaze_preview.webp"
+                            alt="Preview image of Holidaze booking web app project"
+                        />
+                        <div class="img-overlay">
+                            <p class="project-title">Holidaze</p>
                         </div>
-                        <div class="tags">
-                            <p class="tag" title="Tag: HTML">HTML</p>
-                            <p class="tag" title="Tag: CSS">CSS</p>
-                            <p class="tag" title="Tag: JavaScript">JavaScript</p>
+                    </a>
+                    <div class="info">
+                        <p class="desc">
+                            Holidaze is a booking web application made with
+                            React and Bootstrap. Users can register, log in,
+                            create and update bookings and venues.
+                        </p>
+                        <div class="btns-tags">
+                            <div class="buttons">
+                                <button class="demo-btn" id="holidaze-demo-btn">
+                                    Hosted demo
+                                </button>
+                                <button class="repo-btn" id="holidaze-repo-btn">
+                                    GitHub repo
+                                </button>
+                            </div>
+                            <div class="tags">
+                                <p class="tag" title="Tag">React.js</p>
+                                <p class="tag" title="Tag">Bootstrap</p>
+                                <p class="tag" title="Tag">Redux Toolkit</p>
+                                <p class="tag" title="Tag">
+                                    react-lazy-load-image-component
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <hr />
+                <div class="project">
+                    <a
+                        href="https://tabernia.netlify.app"
+                        target="_blank"
+                        class="preview"
+                    >
+                        <img
+                            class="preview-img"
+                            src="src/components/images/previews/tabernia_preview.webp"
+                            alt="Preview image of Tabernia online store project"
+                        />
+                        <div class="img-overlay">
+                            <p class="project-title">Tabernia</p>
+                        </div>
+                    </a>
+                    <div class="info">
+                        <p class="desc">
+                            An online store using Noroff API. Features a
+                            shopping cart and a search bar with autocomplete
+                            search suggestions.
+                            <br />
+                        </p>
+                        <div class="btns-tags">
+                            <div class="buttons">
+                                <button class="demo-btn" id="tabernia-demo-btn">
+                                    Hosted demo
+                                </button>
+                                <button class="repo-btn" id="tabernia-repo-btn">
+                                    GitHub repo
+                                </button>
+                            </div>
+                            <div class="tags">
+                                <p class="tag" title="Tag">React.js</p>
+                                <p class="tag" title="Tag">Bootstrap</p>
+                                <p class="tag" title="Tag">Redux Toolkit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="project">
+                    <a
+                        href="https://scandinavian-auction-house.netlify.app"
+                        target="_blank"
+                        class="preview"
+                    >
+                        <img
+                            class="preview-img"
+                            src="src/components/images/previews/scandinavian_auction_house_preview.webp"
+                            alt="Preview image of Scandinavian Auction House project"
+                        />
+                        <div class="img-overlay">
+                            <p class="project-title">
+                                Scandinavian Auction House
+                            </p>
+                        </div>
+                    </a>
+                    <div class="info">
+                        <p class="desc">
+                            Scandinavian Auction House is an auction website.
+                            Users can register, create listings and bid on them
+                            with credits. Unregistered users can only view
+                            listings.
+                            <br />
+                        </p>
+                        <div class="btns-tags">
+                            <div class="buttons">
+                                <button class="demo-btn" id="sah-demo-btn">
+                                    Hosted demo
+                                </button>
+                                <button class="repo-btn" id="sah-repo-btn">
+                                    GitHub repo
+                                </button>
+                            </div>
+                            <div class="tags">
+                                <p class="tag" title="Tag">HTML</p>
+                                <p class="tag" title="Tag">Bootstrap</p>
+                                <p class="tag" title="Tag">JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="project">
+                    <a
+                        href="https://tanix98.github.io/snake-game/"
+                        target="_blank"
+                        class="preview"
+                    >
+                        <img
+                            class="preview-img"
+                            src="src/components/images/previews/snake_game_preview.webp"
+                            alt="Preview image of the Snake Game project"
+                        />
+                        <div class="img-overlay">
+                            <p class="project-title">Snake Game</p>
+                        </div>
+                    </a>
+                    <div class="info">
+                        <p class="desc">
+                            A small project made in two days, with the goal of
+                            creating a very simple game similar to Snake.
+                            Primarily just a fun side project, but it did give
+                            me some experience with using the HTML canvas
+                            element together with JavaScript.
+                            <br />
+                            <br />
+                            There were more features I could have added, and
+                            bugs to fix, but I chose not to spend too much time
+                            on it since I don’t plan on becoming a game
+                            developer, and I would rather spend time on more
+                            front-end focused projects.
+                        </p>
+                        <div class="btns-tags">
+                            <div class="buttons">
+                                <button class="demo-btn" id="snake-demo-btn">
+                                    Hosted demo
+                                </button>
+                                <button class="repo-btn" id="snake-repo-btn">
+                                    GitHub repo
+                                </button>
+                            </div>
+                            <div class="tags">
+                                <p class="tag" title="Tag">HTML</p>
+                                <p class="tag" title="Tag">CSS</p>
+                                <p class="tag" title="Tag">JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <hr>
-            <div class="project">
-                <div class="preview">
-                    <img class="preview-img" src="components/images/previews/community_science_museum.webp" alt="Preview image of the Community Science museum project">
-                    <div class="img-overlay">
-                        <p class="project-title">Community Science museum</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <p class="desc">
-                        Website made for a Noroff semester project. I further improved my skills in HTML and CSS. I also learned that making all the elements of a page scale with screen sizes was not a good way to make a website responsive. But I was able to make the mobile version look good.
-                    </p>
-                    <div class="btns-tags">
-                        <div class="buttons reverse-btns">
-                            <button class="demo-btn">
-                                Hosted demo
-                            </button>
-                            <button class="repo-btn">
-                                GitHub repo
-                            </button>
-                        </div>
-                        <div class="tags reverse-btns">
-                            <p class="tag" title="Tag: HTML">HTML</p>
-                            <p class="tag" title="Tag: CSS">CSS</p>
-                        </div>
-                    </div>
-                </div>
+        </main>
+        <footer>
+            <div id="footer-content">
+                <p id="copyright-text"></p>
+                <p class="email-btn" id="email-text">
+                    oysteinrostvik@protonmail.com
+                </p>
             </div>
-            <hr>
-            <div class="project">
-                <div class="preview">
-                    <img class="preview-img" src="components/images/previews/game_hub.webp" alt="Preview image of the GameHub project">
-                    <div class="img-overlay">
-                        <p class="project-title">GameHub</p>
-                    </div>
-                </div>
-                <div class="info">
-                    <p class="desc">
-                        Website made for a Noroff course assignment. It was the very first website I both designed and coded. 
-                        <br>
-                        I learned the basics of setting up a website with HTML and CSS, but I was not able to make it responsive at the time. The games and accounts were also hardcoded in, no API was used. 
-                        Afterwards I focused on figuring out how to make websites responsive for all screen sizes.
-                    </p>
-                    <div class="btns-tags">
-                        <div class="buttons">
-                            <button class="demo-btn">
-                                Hosted demo
-                            </button>
-                            <button class="repo-btn">
-                                GitHub repo
-                            </button>
-                        </div>
-                        <div class="tags">
-                            <p class="tag" title="Tag: HTML">HTML</p>
-                            <p class="tag" title="Tag: CSS">CSS</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p id="copyright-text"></p>
-        <p class="email-btn">oysteinrostvik@protonmail.com</p>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

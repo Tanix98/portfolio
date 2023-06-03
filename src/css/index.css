@@ -5,17 +5,17 @@
 }
 
 :root {
-    --blueishDark: #2D1C50;
-    --banner: #CDA4FF;
-    --socialsBtn: #855BB8;
+    --blueishDark: #2d1c50;
+    --banner: #cda4ff;
+    --socialsBtn: #855bb8;
     --socialsBtnHover: #7546ad;
-    --demoBtn: #9F50FD;
+    --demoBtn: #9f50fd;
     --demoBtnHover: #914ce6;
-    --box1: #9C73CA;
-    --box2: #8661B3;
-    --box3: #552D8A;
+    --box1: #9c73ca;
+    --box2: #8661b3;
+    --box3: #552d8a;
     --box4: #674392;
-    --light: #FBF8FF;
+    --light: #fbf8ff;
     --dark: #313131;
     --white: #fff;
 }
@@ -27,7 +27,8 @@ html {
     background-color: var(--light);
 }
 
-h1, h3 {
+h1,
+h3 {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 800;
 }
@@ -43,7 +44,18 @@ p {
 
 main {
     padding-top: 40px;
-    padding-bottom: 90px;
+    padding-bottom: 130px;
+}
+
+hr {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+@media only screen and (min-width: 520px) {
+    main {
+        padding-bottom: 110px;
+    }
 }
 
 .banner {
