@@ -141,7 +141,7 @@ hr {
     color: var(--white);
     font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;

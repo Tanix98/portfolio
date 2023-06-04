@@ -21,7 +21,7 @@
 }
 
 .header-name {
-    font-size: 20px;
+    font-size: 1.25rem;
     height: 52px;
     font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
@@ -123,7 +123,7 @@
     .header-name {
         height: 65px !important;
         white-space: nowrap;
-        font-size: 20px !important;
+        font-size: 1.25rem !important;
     }
     .logo {
         height: 52px !important;
@@ -158,7 +158,7 @@
     .header-name {
         white-space: normal;
         overflow: visible;
-        font-size: 25px !important;
+        font-size: 1.56rem !important;
     }
     #email-copy-txt {
         top: 77%;
