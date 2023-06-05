@@ -88,22 +88,6 @@
     cursor: pointer;
 }
 
-#email-copy-txt {
-    margin: auto;
-    position: fixed;
-    top: 140px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--dark);
-    color: var(--white);
-    width: 130px;
-    height: 35px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-}
-
 @media only screen and (min-width: 355px) {
     .header-name {
         display: block;
@@ -159,9 +143,5 @@
         white-space: normal;
         overflow: visible;
         font-size: 1.56rem !important;
-    }
-    #email-copy-txt {
-        top: 77%;
-        left: 50%;
     }
 }
