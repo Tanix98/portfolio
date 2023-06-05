@@ -18,26 +18,6 @@ holidazeRepoBtn.addEventListener('keyup', (e) => {
     }
 });
 
-// Scandinavian Auction House buttons
-const sahDemoBtn = document.querySelector('#sah-demo-btn');
-sahDemoBtn.addEventListener('click', () => {
-    window.open('https://scandinavian-auction-house.netlify.app', '_blank');
-});
-sahDemoBtn.addEventListener('keyup', (e) => {
-    if (e.key === 'Enter') {
-        window.open('https://scandinavian-auction-house.netlify.app', '_blank');
-    }
-});
-const sahRepoBtn = document.querySelector('#sah-repo-btn');
-sahRepoBtn.addEventListener('click', () => {
-    window.open('https://github.com/Tanix98/semester-project-2', '_blank');
-});
-sahRepoBtn.addEventListener('keyup', (e) => {
-    if (e.key === 'Enter') {
-        window.open('https://github.com/Tanix98/semester-project-2', '_blank');
-    }
-});
-
 // Tabernia buttons
 const taberniaDemoBtn = document.querySelector('#tabernia-demo-btn');
 taberniaDemoBtn.addEventListener('click', () => {
@@ -58,6 +38,26 @@ taberniaRepoBtn.addEventListener('keyup', (e) => {
             'https://github.com/Tanix98/front-end-frameworks-ca',
             '_blank'
         );
+    }
+});
+
+// Scandinavian Auction House buttons
+const sahDemoBtn = document.querySelector('#sah-demo-btn');
+sahDemoBtn.addEventListener('click', () => {
+    window.open('https://scandinavian-auction-house.netlify.app', '_blank');
+});
+sahDemoBtn.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        window.open('https://scandinavian-auction-house.netlify.app', '_blank');
+    }
+});
+const sahRepoBtn = document.querySelector('#sah-repo-btn');
+sahRepoBtn.addEventListener('click', () => {
+    window.open('https://github.com/Tanix98/semester-project-2', '_blank');
+});
+sahRepoBtn.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        window.open('https://github.com/Tanix98/semester-project-2', '_blank');
     }
 });
 
