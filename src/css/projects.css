@@ -54,10 +54,11 @@ hr {
     border: none;
     cursor: pointer;
     color: var(--white);
-    padding: 4px;
+    padding: 6px;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 4px;
+    flex: 1;
 }
 
 .demo-btn {
@@ -147,19 +148,6 @@ hr {
     text-overflow: ellipsis;
 }
 
-@media only screen and (min-width: 520px) {
-    .project {
-        flex-direction: row;
-    }
-    .demo-btn,
-    .repo-btn {
-        width: auto;
-    }
-    .reverse {
-        flex-direction: row-reverse;
-    }
-}
-
 @media only screen and (min-width: 310px) {
     .buttons {
         flex-direction: row;
@@ -167,5 +155,22 @@ hr {
     .project-title {
         white-space: wrap;
         text-overflow: inherit;
+    }
+}
+
+@media only screen and (min-width: 520px) {
+    .project {
+        flex-direction: row;
+    }
+    .reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (min-width: 603px) {
+    .demo-btn,
+    .repo-btn {
+        flex: none;
+        width: 140px;
     }
 }
