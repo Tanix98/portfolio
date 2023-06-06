@@ -58,8 +58,6 @@
     background-color: var(--light);
     width: 100%;
     padding: 14px;
-    padding-left: 4px;
-    padding-right: 4px;
     top: 260px;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -91,16 +89,20 @@
         right: 15px;
     }*/
 
-h1 {
+.modal-name h1 {
     font-size: 2.188rem;
     padding-right: 5px;
     letter-spacing: 5px;
     /*letter-spacing: normal;
-        text-justify: auto;*/
-    white-space: nowrap;
+    text-justify: auto;*/
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.modal-name {
     height: 93px;
+    overflow: hidden;
 }
 
 .modal-top {
@@ -111,16 +113,14 @@ h1 {
 
 .modal-middle {
     margin-bottom: 10px;
-}
-
-.txt-margin {
-    margin-bottom: 10px;
+    font-size: 0.94rem;
 }
 
 #portrait {
     width: 73px;
     height: 73px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px;
+    margin-left: auto;
 }
 
 #modal-background {
@@ -134,7 +134,7 @@ h1 {
 #box-container {
     display: flex;
     gap: 2px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: var(--white);
 }
 
@@ -169,20 +169,16 @@ h1 {
     background-color: var(--box4);
 }
 
-@media only screen and (min-width: 365px) {
+@media only screen and (min-width: 360px) {
     #modal {
-        width: 349px;
+        width: 340px;
     }
 }
 
 @media only screen and (min-width: 340px) {
-    h1 {
+    .modal-name h1 {
         padding-right: 0;
         letter-spacing: 10px;
-        white-space: normal;
-        overflow: visible;
-        text-overflow: clip;
-        height: auto;
     }
     #box-1,
     #box-2,
