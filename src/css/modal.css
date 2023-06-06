@@ -111,16 +111,16 @@
     margin-bottom: 8px;
 }
 
-.modal-middle {
-    margin-bottom: 10px;
-    font-size: 0.94rem;
-}
-
 #portrait {
     width: 73px;
     height: 73px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 4px;
     margin-left: auto;
+}
+
+.modal-middle {
+    margin-bottom: 10px;
+    font-size: 0.94rem;
 }
 
 #modal-background {
