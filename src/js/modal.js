@@ -38,14 +38,17 @@ function isBefore() {
 }
 const yearString = JSON.stringify(currentDateFull.getFullYear());
 const currentYear = Number(yearString.substring(2, 4));
+console.log('is this running?');
 if (isBefore()) {
     const myAge = currentYear + 1;
     document.querySelector(
         '#first-paragraph'
     ).innerHTML = `Hello, I’m a ${myAge} year old front-end dev from Tromsø 👋`;
+    console.log('hey');
 } else {
     const myAge = currentYear + 2;
     document.querySelector(
         '#first-paragraph'
     ).innerHTML = `Hello, I’m a ${myAge} year old front-end dev from Tromsø 👋`;
+    console.log('hello');
 }
