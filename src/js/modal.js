@@ -49,7 +49,6 @@ function setModalFirstParagraph() {
         document.querySelector(
             '#first-paragraph'
         ).innerHTML = `Hello, I’m a ${myAge} year old front-end dev from Tromsø 👋`;
-        console.log('hello');
     }
 }
 setModalFirstParagraph();
