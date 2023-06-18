@@ -13,7 +13,7 @@ hr {
 .project {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .reverse-btns-tags {
@@ -161,6 +161,7 @@ hr {
 @media only screen and (min-width: 520px) {
     .project {
         flex-direction: row;
+        gap: 20px;
     }
     .reverse {
         flex-direction: row-reverse;
