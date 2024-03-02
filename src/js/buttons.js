@@ -1,3 +1,23 @@
+// Tabernia 2024 buttons
+const tabernia2024DemoBtn = document.querySelector('#tabernia2024-demo-btn');
+tabernia2024DemoBtn.addEventListener('click', () => {
+    window.open('https://tabernia-new.netlify.app/', '_blank');
+});
+tabernia2024DemoBtn.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        window.open('https://tabernia-new.netlify.app/', '_blank');
+    }
+});
+const tabernia2024RepoBtn = document.querySelector('#tabernia2024-repo-btn');
+tabernia2024RepoBtn.addEventListener('click', () => {
+    window.open('https://github.com/Tanix98/tabernia-new', '_blank');
+});
+tabernia2024RepoBtn.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        window.open('https://github.com/Tanix98/tabernia-new', '_blank');
+    }
+});
+
 //  Holidaze buttons
 const holidazeDemoBtn = document.querySelector('#holidaze-demo-btn');
 holidazeDemoBtn.addEventListener('click', () => {
@@ -18,21 +38,21 @@ holidazeRepoBtn.addEventListener('keyup', (e) => {
     }
 });
 
-// Tabernia buttons
-const taberniaDemoBtn = document.querySelector('#tabernia-demo-btn');
-taberniaDemoBtn.addEventListener('click', () => {
+// Tabernia 2023 buttons
+const tabernia2023DemoBtn = document.querySelector('#tabernia2023-demo-btn');
+tabernia2023DemoBtn.addEventListener('click', () => {
     window.open('https://tabernia.netlify.app', '_blank');
 });
-taberniaDemoBtn.addEventListener('keyup', (e) => {
+tabernia2023DemoBtn.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
         window.open('https://tabernia.netlify.app', '_blank');
     }
 });
-const taberniaRepoBtn = document.querySelector('#tabernia-repo-btn');
-taberniaRepoBtn.addEventListener('click', () => {
+const tabernia2023RepoBtn = document.querySelector('#tabernia2023-repo-btn');
+tabernia2023RepoBtn.addEventListener('click', () => {
     window.open('https://github.com/Tanix98/front-end-frameworks-ca', '_blank');
 });
-taberniaRepoBtn.addEventListener('keyup', (e) => {
+tabernia2023RepoBtn.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
         window.open(
             'https://github.com/Tanix98/front-end-frameworks-ca',

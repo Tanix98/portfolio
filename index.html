@@ -12,7 +12,7 @@
         <link
             rel="icon"
             type="image/x-icon"
-            href="src/components/icons/favico.svg"
+            href="src/assets/icons/favico.svg"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,7 +43,7 @@
                     </div>
                     <img
                         id="portrait"
-                        src="src/components/images/portrait.webp"
+                        src="src/assets/images/portrait.webp"
                         alt="Portrait image of Øystein Røstvik"
                         loading="lazy"
                     />
@@ -95,7 +95,7 @@
                 <div class="logo-full">
                     <img
                         class="logo"
-                        src="src/components/icons/personal_logo.svg"
+                        src="src/assets/icons/personal_logo.svg"
                         alt="Personal logo, a stylized Ø letter"
                     />
                     <div class="header-name">
@@ -111,7 +111,7 @@
                         rel="noopener noreferrer"
                         title="GitHub account"
                         ><img
-                            src="src/components/icons/socials/github-mark-small.svg"
+                            src="src/assets/icons/socials/github-mark-small.svg"
                             class="socials-btn"
                             alt="GitHub icon"
                     /></a>
@@ -121,12 +121,12 @@
                         rel="noopener noreferrer"
                         title="LinkedIn account"
                         ><img
-                            src="src/components/icons/socials/linkedin.png"
+                            src="src/assets/icons/socials/linkedin.png"
                             class="socials-btn"
                             alt="LinkedIn icon"
                     /></a>
                     <img
-                        src="src/components/icons/socials/email-icon-big.svg"
+                        src="src/assets/icons/socials/email-icon-big.svg"
                         class="socials-btn email-btn"
                         alt="Email icon, click to copy email address"
                         tabindex="0"
@@ -135,7 +135,7 @@
                 </div>
                 <div class="socials-mobile">
                     <img
-                        src="src/components/icons/arrow.svg"
+                        src="src/assets/icons/arrow.svg"
                         class="socials-btn"
                         id="open-btn"
                         alt="Open dropdown menu"
@@ -149,7 +149,7 @@
                         title="GitHub account"
                         class="dropdown"
                         ><img
-                            src="src/components/icons/socials/github-mark-small.svg"
+                            src="src/assets/icons/socials/github-mark-small.svg"
                             class="socials-btn"
                             alt="GitHub icon"
                     /></a>
@@ -160,19 +160,19 @@
                         title="LinkedIn account"
                         class="dropdown"
                         ><img
-                            src="src/components/icons/socials/linkedin.png"
+                            src="src/assets/icons/socials/linkedin.png"
                             class="socials-btn"
                             alt="LinkedIn icon"
                     /></a>
                     <img
-                        src="src/components/icons/socials/email-icon-big.svg"
+                        src="src/assets/icons/socials/email-icon-big.svg"
                         class="socials-btn dropdown email-btn"
                         alt="Email icon, click to copy email address"
                         title="Email address"
                         tabindex="0"
                     />
                     <img
-                        src="src/components/icons/arrow.svg"
+                        src="src/assets/icons/arrow.svg"
                         class="socials-btn dropdown"
                         id="close-btn"
                         alt="Close dropdown menu arrow icon"
@@ -190,13 +190,59 @@
             <div id="projects-container">
                 <div class="project">
                     <a
+                        href="https://tabernia-new.netlify.app/"
+                        target="_blank"
+                        class="preview"
+                    >
+                        <img
+                            class="preview-img"
+                            src="src/assets/images/previews/tabernia2024_preview.webp"
+                            alt="Preview image of Tabernia 2024 web app project"
+                        />
+                        <div class="img-overlay">
+                            <p class="project-title">Tabernia (2024)</p>
+                        </div>
+                    </a>
+                    <div class="info">
+                        <p class="desc">
+                            Remake of an online store project from 2023 with the
+                            same name. The old project was made using
+                            React+Bootstrap. This new project is made with
+                            Vue+Tailwind, and uses a different dummy API.
+                        </p>
+                        <div class="btns-tags">
+                            <div class="buttons">
+                                <button
+                                    class="demo-btn"
+                                    id="tabernia2024-demo-btn"
+                                >
+                                    Live site
+                                </button>
+                                <button
+                                    class="repo-btn"
+                                    id="tabernia2024-repo-btn"
+                                >
+                                    GitHub repo
+                                </button>
+                            </div>
+                            <div class="tags">
+                                <p class="tag" title="Tag">Vue 3</p>
+                                <p class="tag" title="Tag">Tailwind</p>
+                                <p class="tag" title="Tag">Vite</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="project">
+                    <a
                         href="https://holidaze-98.netlify.app/?page=1"
                         target="_blank"
                         class="preview"
                     >
                         <img
                             class="preview-img"
-                            src="src/components/images/previews/holidaze_preview.webp"
+                            src="src/assets/images/previews/holidaze_preview.webp"
                             alt="Preview image of Holidaze booking web app project"
                         />
                         <div class="img-overlay">
@@ -240,11 +286,11 @@
                     >
                         <img
                             class="preview-img"
-                            src="src/components/images/previews/tabernia_preview.webp"
-                            alt="Preview image of Tabernia online store project"
+                            src="src/assets/images/previews/tabernia2023_preview.webp"
+                            alt="Preview image of Tabernia 2023 online store project"
                         />
                         <div class="img-overlay">
-                            <p class="project-title">Tabernia</p>
+                            <p class="project-title">Tabernia (2023)</p>
                         </div>
                     </a>
                     <div class="info">
@@ -257,10 +303,16 @@
                         </p>
                         <div class="btns-tags">
                             <div class="buttons">
-                                <button class="demo-btn" id="tabernia-demo-btn">
+                                <button
+                                    class="demo-btn"
+                                    id="tabernia2023-demo-btn"
+                                >
                                     Live site
                                 </button>
-                                <button class="repo-btn" id="tabernia-repo-btn">
+                                <button
+                                    class="repo-btn"
+                                    id="tabernia2023-repo-btn"
+                                >
                                     GitHub repo
                                 </button>
                             </div>
@@ -281,7 +333,7 @@
                     >
                         <img
                             class="preview-img"
-                            src="src/components/images/previews/scandinavian_auction_house_preview.webp"
+                            src="src/assets/images/previews/scandinavian_auction_house_preview.webp"
                             alt="Preview image of Scandinavian Auction House project"
                         />
                         <div class="img-overlay">
@@ -323,7 +375,7 @@
                     >
                         <img
                             class="preview-img"
-                            src="src/components/images/previews/snake_game_preview.webp"
+                            src="src/assets/images/previews/snake_game_preview.webp"
                             alt="Preview image of the Snake Game project"
                         />
                         <div class="img-overlay">
