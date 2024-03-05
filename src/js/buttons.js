@@ -18,6 +18,32 @@ tabernia2024RepoBtn.addEventListener('keyup', (e) => {
     }
 });
 
+// The Climate Quiz buttons
+const climatequizDemoBtn = document.querySelector('#climatequiz-demo-btn');
+climatequizDemoBtn.addEventListener('click', () => {
+    window.open(
+        'https://tanix98.github.io/the-climate-quiz/index.html',
+        '_blank'
+    );
+});
+climatequizDemoBtn.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        window.open(
+            'https://tanix98.github.io/the-climate-quiz/index.html',
+            '_blank'
+        );
+    }
+});
+const climatequizRepoBtn = document.querySelector('#climatequiz-repo-btn');
+climatequizRepoBtn.addEventListener('click', () => {
+    window.open('https://github.com/Tanix98/the-climate-quiz', '_blank');
+});
+climatequizRepoBtn.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        window.open('https://github.com/Tanix98/the-climate-quiz', '_blank');
+    }
+});
+
 //  Holidaze buttons
 const holidazeDemoBtn = document.querySelector('#holidaze-demo-btn');
 holidazeDemoBtn.addEventListener('click', () => {

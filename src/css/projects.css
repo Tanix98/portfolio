@@ -50,6 +50,12 @@ hr {
 }
 
 .demo-btn,
+.repo-btn,
+.preview {
+    box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 4px;
+}
+
+.demo-btn,
 .repo-btn {
     font-family: 'Lexend', sans-serif;
     font-weight: 500;
@@ -60,7 +66,6 @@ hr {
     padding: 6px;
     padding-left: 15px;
     padding-right: 15px;
-    box-shadow: rgba(0, 0, 0, 0.24) 1px 1px 4px;
     flex: 1;
 }
 
