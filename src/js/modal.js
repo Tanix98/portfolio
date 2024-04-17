@@ -3,25 +3,29 @@ const openModalBtn = document.querySelector('#open-modal-btn');
 const closeModalBtn = document.querySelector('#close-modal-btn');
 
 // Open modal
-openModalBtn.addEventListener('click', openModalDialog);
+openModalBtn.addEventListener('click', openModal);
 openModalBtn.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
-        openModalDialog();
+        openModal();
     }
 });
-function openModalDialog() {
-    modal.showModal();
+function openModal() {
+    setTimeout(() => {
+        modal.showModal();
+    }, 100);
 }
 
 // Close modal
-closeModalBtn.addEventListener('click', closeDialogModal);
+closeModalBtn.addEventListener('click', closeModal);
 closeModalBtn.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
-        closeDialogModal();
+        closeModal();
     }
 });
-function closeDialogModal() {
-    modal.close();
+function closeModal() {
+    setTimeout(() => {
+        modal.close();
+    }, 100);
 }
 
 // Handle click outside of modal
