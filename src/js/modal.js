@@ -1,30 +1,38 @@
-const modal = document.querySelector('#modal-container');
+const modal = document.querySelector('#modal');
 const openModalBtn = document.querySelector('#open-modal-btn');
-const closeModalBtns = document.getElementsByClassName('close-modal');
+const closeModalBtn = document.querySelector('#close-modal-btn');
 
 // Open modal
-openModalBtn.addEventListener('click', openModal);
+openModalBtn.addEventListener('click', openModalDialog);
 openModalBtn.addEventListener('keyup', (e) => {
     if (e.key === 'Enter') {
-        openModal();
+        openModalDialog();
     }
 });
-function openModal() {
-    modal.style.display = 'flex';
+function openModalDialog() {
+    modal.showModal();
 }
 
 // Close modal
-for (let i = 0; i < closeModalBtns.length; i++) {
-    closeModalBtns[i].addEventListener('click', closeModal);
-    closeModalBtns[i].addEventListener('keyup', (e) => {
-        if (e.key === 'Enter') {
-            closeModal();
-        }
-    });
+closeModalBtn.addEventListener('click', closeDialogModal);
+closeModalBtn.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        closeDialogModal();
+    }
+});
+function closeDialogModal() {
+    modal.close();
 }
-function closeModal() {
-    modal.style.display = 'none';
+
+// Handle click outside of modal
+function handleClick(e) {
+    if (e.target.nodeName.toLowerCase() === 'dialog') {
+        modal.close();
+    }
 }
+modal.addEventListener('click', function (e) {
+    handleClick(e);
+});
 
 // Keep age up to date, either adds one or two to the current year and sets the modal's first paragraph text
 function setModalFirstParagraph() {

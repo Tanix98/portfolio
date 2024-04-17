@@ -31,66 +31,68 @@
         <script defer src="src/js/buttons.js"></script>
     </head>
     <body>
-        <div id="modal-container">
-            <div id="modal">
-                <button class="close-modal" id="close-modal-btn" title="Exit">
-                    &times;
-                </button>
-                <div class="modal-top">
-                    <div class="modal-name">
-                        <h1>ØYSTEIN</h1>
-                        <h1>RØSTVIK</h1>
-                    </div>
-                    <img
-                        id="portrait"
-                        src="src/assets/images/portrait.webp"
-                        alt="Portrait image of Øystein Røstvik"
-                        loading="lazy"
-                    />
+        <dialog id="modal">
+            <button
+                class="close-modal"
+                id="close-modal-btn"
+                title="Exit"
+                autofocus
+            >
+                &times;
+            </button>
+            <div class="modal-top">
+                <div class="modal-name">
+                    <h1>ØYSTEIN</h1>
+                    <h1>RØSTVIK</h1>
                 </div>
-                <div class="modal-middle">
-                    <p id="first-paragraph"></p>
-                    <p>
-                        I've learned about designing and creating web apps from
-                        my studies in web development at both Noroff and NTNU.
-                        I’ve also experienced working in a team with other
-                        developers through volunteer work.
-                    </p>
-                </div>
-                <div class="modal-bottom">
-                    <div id="box-container">
-                        <div id="box-row-1">
-                            <div id="box-1">
-                                <h3>Planning</h3>
-                                <p>Kanban board</p>
-                                <p>Gantt chart</p>
-                            </div>
-                            <div id="box-3">
-                                <h3>Designing</h3>
-                                <p>Figma</p>
-                                <p>Adobe Xd</p>
-                                <p>Adobe Illustrator</p>
-                            </div>
+                <img
+                    id="portrait"
+                    src="src/assets/images/portrait.webp"
+                    alt="Portrait image of Øystein Røstvik"
+                    loading="lazy"
+                />
+            </div>
+            <div class="modal-middle">
+                <p id="first-paragraph"></p>
+                <p>
+                    I've learned about designing and creating web apps from my
+                    studies in web development at both Noroff and NTNU. I’ve
+                    also experienced working in a team with other developers
+                    through volunteer work.
+                </p>
+            </div>
+            <div class="modal-bottom">
+                <div id="box-container">
+                    <div id="box-row-1">
+                        <div id="box-1">
+                            <h3>Planning</h3>
+                            <p>Kanban board</p>
+                            <p>Gantt chart</p>
                         </div>
-                        <div id="box-row-2">
-                            <div id="box-2">
-                                <h3>Coding</h3>
-                                <p>React</p>
-                                <p>Vue 3</p>
-                                <p>Bootstrap</p>
-                                <p>Tailwind</p>
-                            </div>
-                            <div id="box-4">
-                                <h3>Headless CMS</h3>
-                                <p>WordPress</p>
-                                <p>Sanity</p>
-                            </div>
+                        <div id="box-3">
+                            <h3>Designing</h3>
+                            <p>Figma</p>
+                            <p>Adobe Xd</p>
+                            <p>Adobe Illustrator</p>
+                        </div>
+                    </div>
+                    <div id="box-row-2">
+                        <div id="box-2">
+                            <h3>Coding</h3>
+                            <p>React</p>
+                            <p>Vue 3</p>
+                            <p>Bootstrap</p>
+                            <p>Tailwind</p>
+                        </div>
+                        <div id="box-4">
+                            <h3>Headless CMS</h3>
+                            <p>WordPress</p>
+                            <p>Sanity</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="close-modal" id="modal-background"></div>
-        </div>
+        </dialog>
         <div class="banner">
             <div class="header">
                 <div class="logo-full">
